@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 bg-gray-50;
+  }
+}
+
+.tech-content code {
+  @apply font-mono bg-gray-100 text-indigo-600 px-1 py-0.5 rounded text-sm;
+}
+
+.prose pre {
+  @apply bg-[#282a36]! p-0! rounded-2xl! overflow-hidden!;
+}
